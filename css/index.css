@@ -342,3 +342,68 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .form-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #dee2e6;
+}
+@media (max-width: 500px) {
+  .home .form-container {
+    text-align: center;
+  }
+}
+.home .form-container form {
+  width: 60%;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .home .form-container form {
+    width: 100%;
+  }
+}
+.home .form-container table {
+  width: 100%;
+  min-width: 200px;
+}
+.home .form-container table td {
+  padding: 5px;
+  vertical-align: middle;
+  width: 50%;
+}
+.home .form-container table td label {
+  font-size: 1.5rem;
+  width: 60%;
+}
+.home .form-container table td input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.home .form-container table td textarea {
+  border-radius: 10px;
+}
+.home .form-container table td button {
+  font-size: 1.5rem;
+  width: 50%;
+  min-width: 100px;
+  padding: 2%;
+  text-align: center;
+  color: #f6f6f6;
+  background-color: #22283a;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 600;
+  transition: 500ms;
+  margin-top: 50px;
+}
+.home .form-container table td button:hover {
+  color: #22283a;
+  background-color: #f6f6f6;
+}
+@media (max-width: 500px) {
+  .home .form-container table td button {
+    width: 100%;
+    padding: 4%;
+  }
+}
