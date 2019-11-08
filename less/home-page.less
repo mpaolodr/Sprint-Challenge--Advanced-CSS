@@ -121,4 +121,60 @@
       }
     } //end of walk img
   } //end of walk section
+
+  .form-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid @main-border-color;
+
+    @media @phone {
+      text-align: center;
+    }
+
+    form {
+      width: 60%;
+      margin: 20px 0;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    table {
+      width: 100%;
+      min-width: 200px;
+
+      td {
+        padding: 5px;
+        vertical-align: middle;
+        width: 50%;
+
+        label {
+          font-size: 1.5rem;
+          width: 60%;
+        }
+
+        input {
+          width: 100%;
+          padding: 5px;
+          margin-bottom: 2%;
+          border-radius: 10px;
+        }
+
+        textarea {
+          border-radius: 10px;
+        }
+
+        button {
+          .cta-btn(50%);
+          margin-top: 50px;
+
+          @media @phone {
+            width: 100%;
+            padding: 4%;
+          }
+        }
+      }
+    } //table ends here
+  } //form-container ends here
 } // home
