@@ -1,1 +1,44 @@
 // Navigation code here
+.full-width {
+  width: 100%;
+  border: 1px solid @main-border-color;
+  background-color: @nav-bg;
+}
+
+.navigation {
+  width: 65%;
+  margin: 0 auto;
+  .display(space-between, center);
+  flex-direction: column;
+
+  @media @phone {
+    width: 80%;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-top: 1%;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  } // logo container ends here
+
+  nav {
+    min-width: 300px;
+    width: 60%;
+    margin: 1% 0;
+    .display(space-around, center);
+
+    @media @phone {
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: @main-font-color;
+      text-decoration: none;
+    } // a ends here
+  } //nav ends here
+} //navigation ends here
