@@ -1,17 +1,27 @@
 // Home Content
 
 .home {
-
+  width: 100%;
+  border: 2px solid black;
   .intro {
+    .header-image {
+      border: 2px solid black;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,18 +68,24 @@
       }
 
       .btn {
+        border: 2px solid black;
+        .display(flex-start, center);
+
+        button {
+          .cta-btn(40%, 100px, 1.5rem, 2%);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-    }
-  }
-}// home
+    } //end of walk img
+  } //end of walk section
+} // home

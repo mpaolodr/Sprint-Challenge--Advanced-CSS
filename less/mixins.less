@@ -5,3 +5,22 @@
   justify-content: @main;
   align-items: @cross;
 }
+
+.cta-btn(@width, @min-width, @font-size, @padding) {
+  font-size: @font-size;
+  width: @width;
+  min-width: @min-width;
+  padding: @padding;
+  text-align: center;
+  color: @wild-sand;
+  background-color: @btn-bg-color;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 600;
+  transition: 500ms;
+
+  &:hover {
+    color: @btn-bg-color;
+    background-color: @wild-sand;
+  }
+}
