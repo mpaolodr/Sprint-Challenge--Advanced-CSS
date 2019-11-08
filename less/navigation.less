@@ -1,1 +1,39 @@
 // Navigation code here
+.full-width {
+  width: 100%;
+  border: 5px solid orange; //change border color to nav border in variables
+  background-color: @nav-bg;
+}
+
+.navigation {
+  border: 2px solid black;
+  width: 65%;
+  margin: 0 auto;
+  .display(space-between, center);
+  flex-direction: column;
+
+  .logo-container {
+    border: 2px solid red;
+    text-align: center;
+    margin-top: 1%;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  } // logo container ends here
+
+  nav {
+    border: 2px solid green;
+    min-width: 300px;
+    width: 60%;
+    margin: 1% 0;
+    .display(space-around, center);
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: @main-font-color;
+      text-decoration: none;
+    }
+  } //nav ends here
+} //navigation ends here

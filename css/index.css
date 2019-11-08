@@ -160,6 +160,43 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.full-width {
+  width: 100%;
+  border: 5px solid orange;
+  background-color: #F6F6F6;
+}
+.navigation {
+  border: 2px solid black;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.navigation .logo-container {
+  border: 2px solid red;
+  text-align: center;
+  margin-top: 1%;
+}
+.navigation .logo-container h1 {
+  font-size: 3.5rem;
+}
+.navigation nav {
+  border: 2px solid green;
+  min-width: 300px;
+  width: 60%;
+  margin: 1% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #5E6164;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
