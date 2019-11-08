@@ -1,19 +1,21 @@
 // Navigation code here
 .full-width {
   width: 100%;
-  border: 5px solid orange; //change border color to nav border in variables
+  border: 1px solid @main-border-color;
   background-color: @nav-bg;
 }
 
 .navigation {
-  border: 2px solid black;
   width: 65%;
   margin: 0 auto;
   .display(space-between, center);
   flex-direction: column;
 
+  @media @phone {
+    width: 80%;
+  }
+
   .logo-container {
-    border: 2px solid red;
     text-align: center;
     margin-top: 1%;
 
@@ -23,11 +25,14 @@
   } // logo container ends here
 
   nav {
-    border: 2px solid green;
     min-width: 300px;
     width: 60%;
     margin: 1% 0;
     .display(space-around, center);
+
+    @media @phone {
+      width: 100%;
+    }
 
     a {
       font-size: 1.6rem;
